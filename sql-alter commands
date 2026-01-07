@@ -1,0 +1,14 @@
+-- ADD NEW COLUMN
+ALTER TABLE worker ADD middle_name VARCHAR(40);
+
+-- CHANGE DATATYPE OF COLUMN
+ALTER TABLE worker MODIFY middle_name CHAR(40);
+
+-- CHANGE/REPLACE A COLUMN
+ALTER TABLE worker CHANGE COLUMN name worker_name VARCHAR(1024);
+
+-- DROP A COLUMN
+ALTER TABLE worker DROP COLUMN middle_name;
+
+-- RENAME A TABLE
+ALTER TABLE worker RENAME TO worker_details;
