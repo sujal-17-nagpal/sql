@@ -1,0 +1,9 @@
+INSERT INTO student (rollno,name,city)
+VALUES (120,"bob","delhi");
+
+UPDATE student SET marks = 90 WHERE rollno= 120; 
+
+DELETE from student WHERE rollno = 120;
+
+REPLACE INTO student (rollno,city)
+VALUES (120,"haryana");
